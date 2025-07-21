@@ -1,0 +1,41 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+*.sqlite3
+*.egg-info/
+*.egg
+*.bak
+
+# === Virtual Environments ===
+venv/
+env/
+.venv/
+ENV/
+.ENV/
+
+# === IDE / Editor Configs ===
+.vscode/
+.idea/
+.DS_Store
+
+# === Environment + Secrets ===
+.env
+*.pem
+*.key
+*.crt
+
+# === Exported Artifacts ===
+exports/
+logs/
+error_debug.png
+*.html
+*.csv
+*.json
+
+# === System Files ===
+Thumbs.db
+desktop.ini

@@ -1,0 +1,57 @@
+{ 
+  "best_fit_keywords": [
+    "artificial intelligence",
+    "ai services",
+    "cloud migration",
+    "cloud services",
+    "ml model",
+    "machine learning",
+    "data engineering",
+    "data platform",
+    "training",
+    "modernization",
+    "devops",
+    "cloud computing",
+    "data warehouse",
+    "cybersecurity",
+    "data analytics"
+  ],
+  "moderate_fit_keywords": [
+    "data",
+    "analytics",
+    "IT support",
+    "software maintenance",
+    "infrastructure",
+    "dashboard",
+    "data entry",
+    "reporting",
+    "testing"
+  ],
+  "ignore_keywords": [
+    "hardware",
+    "circuit",
+    "cabling",
+    "printer",
+    "scanner",
+    "manufacturing",
+    "construction",
+    "civil works",
+    "power supply",
+    "surveillance camera"
+  ],
+  "preferred_agencies": [
+    "Department of Defense",
+    "Department of Education",
+    "Department of Homeland Security",
+    "NASA",
+    "US Department of Agriculture",
+    "Office of the Chief Technology Officer (OCTO)",
+    "Food and Drug Administration",
+    "Health and Human Services",
+    "Department of State",
+    "Veterans Affairs",
+    "Department of Justice",
+    "National Library of Medicine",
+    "Department of Commerce"
+  ]
+}

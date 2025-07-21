@@ -1,0 +1,61 @@
+🔹 🧩 Module 1: Browser Automation + Raw Scraper
+Status: ✅ Done
+
+✔️ Built using Playwright (Python) for headless browser control.
+
+✔️ Implemented launch_browser_and_scrape_opportunities() in browser_driver.py.
+
+✔️ Script navigates to a specified Gowin URL and extracts:
+
+title
+
+description
+
+link
+
+✔️ Selector-based scraping with error handling, screenshots on failure.
+
+✔️ Successfully tested end-to-end from VS Code in virtual environment.
+
+✅ Output returned: list of dicts (opportunities).
+
+🔹 🧩 Module 2: Conditional Filtering Engine
+Status: ✅ Logic shared & to be implemented
+
+📦 Built as opportunity_parser.py
+
+✔️ Accepts raw data (from the scraper)
+
+✔️ Loads external filters.json for logic (keyword-based logic, tag fit levels)
+
+✔️ Applies logic:
+
+Best Fit → strict match with core keywords
+
+Moderate → partial match with related tech
+
+Ignore → eliminate noisy domains like fashion/retail
+
+✔️ Returns only relevant structured opportunities with a new "fit" tag. 
+
+Module 3: Data Structurer & Exporter
+Structure final results to structured_output.csv or .json
+
+Add timestamping, source tagging, etc.
+
+🔸 Module 4: Email Dispatch
+Use SMTP with .env credentials
+
+Send daily filtered reports to respective POCs
+
+Attach opportunity links and metadata
+
+🔸 Module 5: Trigger Engine / Scheduler
+Auto-trigger the scraper every day (9-hour window)
+
+Use schedule, cron, or Task Scheduler (on Windows)
+
+🔸 Module 6: Logging + Error Tracking
+Create logs/run_log_<date>.log
+
+Track start time, scrape count, success/failure, exceptions

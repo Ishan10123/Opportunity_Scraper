@@ -1,0 +1,32 @@
+{
+  "high_priority": [
+    "Department of the Army",
+    "Department of the Navy",
+    "Department of the Air Force",
+    "Department of Defense",
+    "U.S. Army Corps of Engineers",
+    "U.S. Department of State",
+    "National Aeronautics and Space Administration (NASA)",
+    "Department of Health and Human Services",
+    "U.S. Agency for International Development (USAID)",
+    "Department of Veterans Affairs"
+  ],
+  "moderate_priority": [
+    "General Services Administration (GSA)",
+    "Department of Justice",
+    "Department of Homeland Security",
+    "U.S. Geological Survey",
+    "National Oceanic and Atmospheric Administration (NOAA)",
+    "Environmental Protection Agency (EPA)",
+    "Centers for Medicare and Medicaid Services (CMS)"
+  ],
+  "low_priority": [
+    "Department of the Interior",
+    "Department of Labor",
+    "Department of Commerce",
+    "Small Business Administration",
+    "Social Security Administration",
+    "Federal Aviation Administration (FAA)",
+    "Department of Education"
+  ]
+}

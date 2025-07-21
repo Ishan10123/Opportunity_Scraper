@@ -1,0 +1,159 @@
+Key Objectives:
+Scrape filtered data from Gowin website (without API).
+
+Run logic to classify opportunities as "Best Fit", "Moderate", or "Not Fit".
+
+Structure data (as-is content; no NLP/AI summarization).
+
+Send structured data to POC via automated emails with direct links.
+
+Trigger-based execution, 9 hours daily.
+
+Scalable to government agency portals later.
+
+
+
+Task Flow:
+[Trigger/Timer]
+     ↓
+[Selenium/Playwright Scraper]
+     ↓
+[Conditional Filtering Logic (Python)]
+     ↓
+[Structuring Module (Pandas/Custom Logic)]
+     ↓
+[Email Automation (SMTP or Outlook API)]
+     ↓
+[Daily Logging + Optional Local Backup]
+
+
+
+
+Step-by-Step Implementation Plan:
+
+1️ Website Analysis & Pre-Filter Mapping
+Use browser DevTools to identify:
+
+DOM structure of opportunity entries.
+
+How filters (e.g., location, sector, budget) are applied (via URL parameters or JS?).
+
+How opportunity links are built.
+
+🛠 Tools: Chrome DevTools, XPath/CSS selectors.
+
+
+2️ Web Scraping Setup (No API Access)
+✅ Use:
+Playwright (recommended for stealth + speed + automation)
+
+Or Selenium (well-supported, headless or headful)
+
+
+3️ Conditional Logic Classification
+Apply your internal logic to tag scraped data.
+
+
+4 Structuring the Output (Tabular/JSON)
+Structure into a daily digest report:
+
+Title
+
+Classification
+
+Short Description
+
+Link
+
+Export formats:
+
+HTML (for emails)
+
+CSV/JSON for archival
+
+
+
+5️ Automated Email Notification (POC)
+
+
+
+6️ Trigger + Runtime Setup
+Use Task Scheduler (Windows) or Cron (Linux) for timed runs.
+
+Set to run every 60 mins from 9 AM to 6 PM.
+
+
+7️ Deployment-Ready Packaging
+Use PyInstaller to create an executable if required.
+
+
+
+my folder structure:
+
+C:\web_scrapping_task\
+│
+├── core\
+│   ├── __init__.py
+│   ├── raw_scraper.py
+│   ├── opportunity_parser.py
+│   └── sam_client.py
+│
+├── scraper\
+│   ├── __init__.py
+│   ├── browser_driver.py
+│   ├── data_exporter.py
+│   └── logger.py
+│
+├── utils\
+│   ├── __init__.py
+│   ├── email_dispatcher.py
+│   ├── exporter.py
+│   └── structured_exporter.py
+│
+├── scheduler\
+│   ├── __init__.py
+│   └── scheduler.py
+│
+├── data\
+│   ├── raw_scraped_data.json
+│   ├── agency_performance.json
+│   ├── filters.json
+│   └── failed_page.html
+│
+├── exports\
+│   ├── exported_results_*.csv
+│   └── exported_results_*.json
+│
+├── logs\
+│   └── run_log_*.log
+│
+├── main.py
+├── test_env.py
+├── test_scraper.py
+├── .env
+├── .gitignore
+└── README.md
+
+
+links:
+
+https://sam.gov/opportunities
+ 
+Key NAICS Codes for IT:
+541511 - Custom Computer Programming Services
+541512 - Computer Systems Design Services
+541513 - Computer Facilities Management Services
+541519 - Other Computer Related Services
+518210 - Data Processing, Hosting, and Related Services
+511210 - Software Publishers
+ 
+
+
+
+ 
+
+
+
+
+
+
